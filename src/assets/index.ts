@@ -29,7 +29,9 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
-
+import studyplanner from "./studyplanner.png";
+import carrace from "./carrace.png";
+import portfolio from "./portfolio.png";
 export {
   logo,
   backend,
@@ -58,5 +60,8 @@ export {
   tesla,
   carrent,
   jobit,
+  carrace,
   tripguide,
+  portfolio,
+  studyplanner,
 };

@@ -30,8 +30,11 @@ import {
   shopify,
   carrent,
   jobit,
+  carrace,
   tripguide,
+  portfolio,
   threejs,
+  studyplanner,
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -125,19 +128,20 @@ const technologies: TTechnology[] = [
 
 const experiences: TExperience[] = [
   {
-    title: "Web Developer",
-    companyName: "Intergrity Examination & Solutions",
-    icon: starbucks,
-    iconBg: "#FFFFFF",
-    date: "Aug 2024 - Nov 2024",
+    title: "Software Developer Intern",
+    companyName: "Giglabs",
+    icon: shopify,
+    iconBg: "#12339a",
+    date: "Feb 2025 - Present",
     points: [
-      "Developed and deployed a web application using React.js to streamline workforce management.",
-      "Integrated Firebase for authentication, real-time data storage, and backend services.",
-      "Implemented dynamic charts and reports using Chart.js and jsPDF, enabling visual data analysis and exportable reports.",
-      "Built a responsive and intuitive UI with React Router, React Select, and React Spinners for a smooth user experience",
-      "Optimized performance and security by configuring API handling with Axios and setting up environment variables for secure data access.."
+      "Built scalable UIs with React.js & Vue.js, optimizing performance and state management.",
+      "Developed FastAPI-based REST/WebSocket APIs with JWT, OAuth, and RBAC security.",
+      "Integrated CI/CD pipelines (Docker, Kubernetes, GitHub Actions) for automated deployments.",
+      "Optimized database queries (PostgreSQL, MongoDB, Redis) for high-speed data processing.",
+      "Implemented SSR/SSG (Next.js/Nuxt.js) for better SEO and faster load times.",
     ],
   },
+  
   {
     title: "Applpication Developer- Web & Mobile",
     companyName: "Rooman Technologies - Intern",
@@ -153,17 +157,17 @@ const experiences: TExperience[] = [
     ],
   },
   {
-    title: "Software Developer Intern",
-    companyName: "Giglabs",
-    icon: shopify,
-    iconBg: "#12339a",
-    date: "Feb 2025 - Present",
+    title: "Web Developer",
+    companyName: "Intergrity Examination & Solutions",
+    icon: starbucks,
+    iconBg: "#FFFFFF",
+    date: "Aug 2024 - Nov 2024",
     points: [
-      "Built scalable UIs with React.js & Vue.js, optimizing performance and state management.",
-      "Developed FastAPI-based REST/WebSocket APIs with JWT, OAuth, and RBAC security.",
-      "Integrated CI/CD pipelines (Docker, Kubernetes, GitHub Actions) for automated deployments.",
-      "Optimized database queries (PostgreSQL, MongoDB, Redis) for high-speed data processing.",
-      "Implemented SSR/SSG (Next.js/Nuxt.js) for better SEO and faster load times.",
+      "Developed and deployed a web application using React.js to streamline workforce management.",
+      "Integrated Firebase for authentication, real-time data storage, and backend services.",
+      "Implemented dynamic charts and reports using Chart.js and jsPDF, enabling visual data analysis and exportable reports.",
+      "Built a responsive and intuitive UI with React Router, React Select, and React Spinners for a smooth user experience",
+      "Optimized performance and security by configuring API handling with Axios and setting up environment variables for secure data access.."
     ],
   },
   // {
@@ -210,9 +214,9 @@ const testimonials: TTestimonial[] = [
 
 const projects: TProject[] = [
   {
-    name: "Car Rent",
+    name: "A.I Based Study Planner",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "The AI-Based Study Planner uses AI and vector search to provide students with smart study recommendations, document-based Q&A, and an interactive chatbot for efficient learning.",
     tags: [
       {
         name: "react",
@@ -223,53 +227,61 @@ const projects: TProject[] = [
         color: "green-text-gradient",
       },
       {
+        name: "typescript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "python",
+        color: "purple-text-gradient",
+      },
+    ],
+    image: studyplanner,
+    sourceCodeLink: "https://github.com/mufeed16/backend_of-_finalyear",
+  },
+  {
+    name: "Car Race Game",
+    description:
+      "The Car Racing Game is a C++-based racing simulation featuring user-controlled cars, obstacle avoidance, and smooth gameplay mechanics with efficient collision detection and real-time user input handling.",
+    tags: [
+      {
+        name: "c++",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Code::Blocks",
+        color: "green-text-gradient",
+      },
+      {
+        name: "OpenGL ",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: carrace,
+    sourceCodeLink: "https://github.com/mufeed16/Car_Race_game",
+  },
+  {
+    name: "My Portfolio",
+    description:
+      "A sleek and modern portfolio website showcasing my skills, projects, and experience, with an interactive design, smooth animations, and a user-friendly interface to highlight my expertise in web development.",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescriot",
+        color: "green-text-gradient",
+      },
+      {
+        name: "threejs",
+        color: "pink-text-gradient",
+      },
+      {
         name: "tailwind",
-        color: "pink-text-gradient",
+        color: "purple-text-gradient",
       },
     ],
-    image: carrent,
-    sourceCodeLink: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    sourceCodeLink: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
+    image: portfolio,
     sourceCodeLink: "https://github.com/",
   },
 ];

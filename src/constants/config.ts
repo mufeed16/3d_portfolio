@@ -36,6 +36,12 @@ type TConfig = {
     feedbacks: TSection;
     works: Required<TSection>;
   };
+  social: {
+    whatsapp: string;
+    linkedin: string;
+    github: string;
+    instagram: string;
+  };
 };
 
 export const config: TConfig = {
@@ -88,5 +94,11 @@ export const config: TConfig = {
     ability to solve complex problems, work with different technologies,
     and manage projects effectively.`,
     },
+ },
+ social: {
+   whatsapp: "https://wa.me/918921850186",
+   linkedin: "https://www.linkedin.com/in/mufeed-09445027b",
+   github: "https://github.com/mufeed16",
+   instagram: "https://instagram.com/mu._fyy",
   },
 };
