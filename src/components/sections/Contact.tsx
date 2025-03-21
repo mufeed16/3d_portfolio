@@ -7,10 +7,6 @@ import { SectionWrapper } from "../../hoc";
 import { slideIn } from "../../utils/motion";
 import { config } from "../../constants/config";
 import { Header } from "../atoms/Header";
-import whatsapp from '../../../public/whatsapp.png';
-import linkedin from '../../../public/linkedin.png';
-import github from '../../../public/github.png';
-import instagram from '../../../public/instagram.png';
 
 const INITIAL_STATE = Object.fromEntries(
   Object.keys(config.contact.form).map((input) => [input, ""])
@@ -77,8 +73,8 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className="bg-black-100 flex-[0.75] rounded-2xl p-8"
       >
-        
-      
+
+
         <Header useMotion={false} {...config.contact} />
 
         <form
@@ -116,16 +112,16 @@ const Contact = () => {
         </form>
         <div className="mt-6 flex flex-row justify-center gap-4">
           <a href={config.social.whatsapp} target="_blank" rel="noopener noreferrer">
-            <img src={whatsapp} alt="WhatsApp" className="w-12 h-12 object-contain" />
+            <img src="/whatsapp.png?url" alt="WhatsApp" className="w-12 h-12 object-contain" />
           </a>
           <a href={config.social.linkedin} target="_blank" rel="noopener noreferrer">
-            <img src={linkedin} alt="LinkedIn" className="w-12 h-12 object-contain" />
+            <img src="/linkedin.png?url" alt="LinkedIn" className="w-12 h-12 object-contain" />
           </a>
           <a href={config.social.github} target="_blank" rel="noopener noreferrer">
-            <img src={github} alt="GitHub" className="w-12 h-12 object-contain" />
+            <img src="/github.png?url" alt="GitHub" className="w-12 h-12 object-contain" />
           </a>
           <a href={config.social.instagram} target="_blank" rel="noopener noreferrer">
-            <img src={instagram} alt="Instagram" className="w-12 h-12 object-contain" />
+            <img src="/instagram.png?url" alt="Instagram" className="w-12 h-12 object-contain" />
           </a>
         </div>
       </motion.div>
@@ -141,4 +137,3 @@ const Contact = () => {
 };
 
 export default SectionWrapper(Contact, "contact");
-
