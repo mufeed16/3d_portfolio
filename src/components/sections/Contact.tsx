@@ -7,10 +7,10 @@ import { SectionWrapper } from "../../hoc";
 import { slideIn } from "../../utils/motion";
 import { config } from "../../constants/config";
 import { Header } from "../atoms/Header";
-import whatsapp from '../../../public/whatsapp.png';
-import linkedin from '../../../public/linkedin.png';
-import github from '../../../public/github.png';
-import instagram from '../../../public/instagram.png';
+import whatsapp from '../../public/whatsapp.png';
+import linkedin from '../../public/linkedin.png';
+import github from '../../public/github.png';
+import instagram from '../../public/instagram.png';
 
 const INITIAL_STATE = Object.fromEntries(
   Object.keys(config.contact.form).map((input) => [input, ""])
