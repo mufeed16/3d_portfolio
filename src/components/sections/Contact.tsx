@@ -45,9 +45,9 @@ const Contact = () => {
         emailjsConfig.serviceId,
         emailjsConfig.templateId,
         {
-          form_name: form.name,
+          name: form.name,
           to_name: config.html.fullName,
-          from_email: form.email,
+          email: form.email,
           to_email: config.html.email,
           message: form.message,
         },
@@ -63,7 +63,7 @@ const Contact = () => {
         (error) => {
           setLoading(false);
 
-          console.log(error);
+          console.log("EmailJS error:", JSON.stringify(error, null, 2));
           alert("Something went wrong.");
         }
       );
@@ -141,3 +141,4 @@ const Contact = () => {
 };
 
 export default SectionWrapper(Contact, "contact");
+

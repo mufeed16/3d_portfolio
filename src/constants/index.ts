@@ -282,7 +282,7 @@ const projects: TProject[] = [
       },
     ],
     image: portfolio,
-    sourceCodeLink: "https://github.com/",
+    sourceCodeLink: "https://github.com/mufeed16/3d_portfolio",
   },
 ];
 
