@@ -18,7 +18,6 @@ const INITIAL_STATE = Object.fromEntries(
 const Contact = () => {
   const formRef = useRef<React.LegacyRef<HTMLFormElement> | undefined>();
   const [form, setForm] = useState(INITIAL_STATE);
-  const [loading, setLoading] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement> | undefined
@@ -73,7 +72,7 @@ const Contact = () => {
             type="submit"
             className="bg-tertiary shadow-primary w-fit rounded-xl px-8 py-3 font-bold text-white shadow-md outline-none"
           >
-            {loading ? "Sending..." : "Send"}
+            Send
           </button>
         </form>
         <div className="mt-6 flex flex-row justify-center gap-4">
