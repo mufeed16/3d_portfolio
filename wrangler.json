@@ -1,0 +1,5 @@
+{
+  "name": "mufeed",
+  "compatibility_date": "2025-03-24",
+  "main": "src/main.tsx"
+}
