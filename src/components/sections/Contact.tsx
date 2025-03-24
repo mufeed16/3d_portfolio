@@ -19,6 +19,7 @@ const Contact = () => {
   const formRef = useRef<React.LegacyRef<HTMLFormElement> | undefined>();
   const [form, setForm] = useState(INITIAL_STATE);
 
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement> | undefined
   ) => {
@@ -44,9 +45,7 @@ const Contact = () => {
           // @ts-expect-error
           ref={formRef}
           className="mt-12 flex flex-col gap-8"
-          action="/"
-          method="POST"
-          netlify // Add netlify attribute for Netlify Forms
+          action="https://forms.gle/aL1z26vT3MxQySRG8"
         >
           {Object.keys(config.contact.form).map((input) => {
             const { span, placeholder } =
