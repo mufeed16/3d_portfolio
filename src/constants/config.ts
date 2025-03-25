@@ -82,8 +82,8 @@ export const config: TConfig = {
       h2: "Work Experience.",
     },
     feedbacks: {
-      p: "What others say",
-      h2: "Testimonials.",
+      // p: "",
+      // h2: "",
     } as TSection,
     works: {
       p: "My work",
