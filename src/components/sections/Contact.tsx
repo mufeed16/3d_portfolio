@@ -22,6 +22,8 @@ const emailjsConfig = {
   accessToken: import.meta.env.VITE_EMAILJS_ACCESS_TOKEN,
 };
 
+emailjs.init(emailjsConfig.accessToken);
+
 const Contact = () => {
   const formRef = useRef<React.LegacyRef<HTMLFormElement> | undefined>();
   const [form, setForm] = useState(INITIAL_STATE);
@@ -50,8 +52,7 @@ const Contact = () => {
           email: form.email,
           to_email: config.html.email,
           message: form.message,
-        },
-        emailjsConfig.accessToken
+        }
       )
       .then(
         () => {

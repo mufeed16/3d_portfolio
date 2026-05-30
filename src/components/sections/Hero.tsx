@@ -9,7 +9,6 @@ const Hero = () => {
       <div
         className={`absolute inset-0 top-[120px] mx-auto max-w-7xl ${styles.paddingX} flex flex-row items-start gap-5`}
       >
-
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className="text-[#da8ee7]">{config.hero.name}</span>
@@ -24,27 +23,8 @@ const Hero = () => {
       </div>
 
       <ComputersCanvas />
-
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    
     </section>
   );
 };
 
 export default Hero;
-

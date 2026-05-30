@@ -25,6 +25,8 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import ifm_logo from "./ifm_logo.png";
+import mehwar_logo from "./mehwar_logo.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -64,4 +66,6 @@ export {
   tripguide,
   portfolio,
   studyplanner,
+  ifm_logo,
+  mehwar_logo,
 };

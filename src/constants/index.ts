@@ -27,6 +27,8 @@ import {
   starbucks,
   tesla,
   shopify,
+  ifm_logo,
+  mehwar_logo,
   carrace,
   portfolio,
   threejs,
@@ -124,11 +126,40 @@ const technologies: TTechnology[] = [
 
 const experiences: TExperience[] = [
   {
-    title: "Software Developer Intern",
+    title: "Software Developer",
+    companyName: "iFM Facilities Management L.L.C",
+    icon: ifm_logo,
+    iconBg: "#1a1a1a",
+    date: "Aug 2025 - Present",
+    points: [
+      "Developed and maintained facilities management software, improving operational efficiency by 25% through system enhancements and automation.",
+      "Assisted in software upgrades and implemented backup processes, increasing system reliability and reducing downtime risk by 30%.",
+      "Optimized reporting and troubleshooting processes, reducing issue resolution time by 40% and improving data accuracy for management decisions.",
+      "Optimized database queries (PostgreSQL MongoDB) for high-speed data processing.",
+    ],
+  },
+
+  {
+    title: "A.I Developer - Freelance (Remote)",
+    companyName: "Mehwar Technology",
+    icon: mehwar_logo,
+    iconBg: "#1a1a1a",
+    date: "Aug 2025 - Present",
+    points: [
+      "Built scalable UIs with React.js & Vue.js, optimizing performance and state management.",
+      "Developed FastAPI-based REST/WebSocket APIs with JWT, OAuth.",
+      "Developed AI automation tools at Mehwar Technology, improving workflow efficiency by 30%.",
+      "Built backend systems using Python, FastAPI, and cloud services with 99%+ uptime and 25% faster performance.",
+      "Integrated ML models into client apps, improving decision accuracy by 20%.",
+    ],
+  },
+  
+  {
+    title: "Software Developer",
     companyName: "Giglabs",
     icon: shopify,
     iconBg: "#12339a",
-    date: "Feb 2025 - Present",
+    date: "Sep 2024 - Aug 2025",
     points: [
       "Built scalable UIs with React.js & Vue.js, optimizing performance and state management.",
       "Developed FastAPI-based REST/WebSocket APIs with JWT, OAuth, and RBAC security.",
